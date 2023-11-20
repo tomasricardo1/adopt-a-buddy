@@ -1,0 +1,421 @@
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* Nav Bar ____________________________________ */
+
+
+.navbar-logo {
+  display: flex;
+  align-items: flex;
+}
+.navbar-logo img {
+  max-height: 60px;
+}
+
+.navbar-personalizar {
+  width:60%;
+  margin:0 auto;
+}
+
+.container-fluid {
+  background-color: #84d1e4!important;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px; /* Ajuste conforme necessário */
+}
+.nav-item a {
+  color:white;
+  font-size: 1.1rem;
+  padding:8px;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color:#84d1e4;
+  background-color:white;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header ----------------------------------------------------------------------------
+
+header 
+{ 
+    
+    padding:px; 
+    text-align: center;
+    background-color: #70cbe2;
+   
+    
+    
+} 
+header h1 
+{ 
+   
+    margin: 0; 
+} 
+nav ul 
+{ 
+ 
+    list-style-type: none; 
+    padding: 20px; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+} 
+nav li 
+{ 
+    
+    margin: 0 10px; 
+    padding: 0px;
+    border-radius:4px;
+    
+} 
+
+nav a 
+{ 
+    color:#ffffff  ;
+    font-size: 25px;
+    padding:8px;
+    font-weight:bold;
+    
+ 
+    
+} 
+
+
+nav:hover 
+{ 
+  color:white;
+  background-color: #539fb4; 
+  border-radius: 10px;
+  transition: all 1s ease;
+  font-weight: light;
+  
+
+}
+
+
+nav ul li a:hover 
+{ 
+    color: #539fb4; 
+    background-color:white;
+    border-radius: 10px;
+    transition: all 1s ease;
+    font-weight: light;
+}
+
+*/
+
+
+
+/*----------------------------------------------------------------------------*/
+
+/* Seccao de Background */
+
+a {
+  text-decoration: none;
+
+}
+
+.banner {
+  background: url(/img/banner.png)no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color:white;
+}
+
+.botao-ver-amigos {
+  height: 45px;
+  width: 35%;
+  outline: none;
+  font-weight: 700;
+  border-radius: 60px;
+  background: #84d1e4;
+  border: 3px solid #84d1e4;
+  color: white;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+}
+
+.botao-ver-amigos:hover {
+  border: 3px solid #84d1e4;
+  color: #84d1e4;
+  background: white;
+  font-size: 1.2em;
+}
+
+/* ------------------------------ */
+
+
+
+.cover-section {
+    background-color: #84d1e4;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+  }
+  
+  .cover-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cover-section p {
+    font-size: 40px;
+    text-align:center;
+
+  }
+  
+
+  .text-body-emphasis
+  {
+    color: #539fb4 !important;
+  }
+
+  .botao-adotar
+  {
+    color:white;
+    background-color:#84d1e4;
+    border:none;
+    border-radius: 10px;
+    padding:20px;
+    font-size:20px;
+
+  }
+
+.botao-adotar:hover
+{
+        color: #539fb4; 
+        background-color: #d2f1fa;
+        border-radius: 10px;
+        transition: all 1s ease;
+        font-weight: light;
+        border-bottom:2px solid #84d1e4;
+}
+
+
+
+
+
+/* footer ----------------------------------------------------------------------------*/
+
+
+
+#img-footer {
+  max-height: 60px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+
+#ver-mais-amigos:hover {
+  background: #84d1e4;
+  color: white;
+  font-size: 1.3em;
+}
+
+
+#ver-mais-amigos {
+  display: block;
+  margin:0 auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  width: 290px;
+  height: 60px;
+  border: 3px solid #84d1e4;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+/*-------*/
+
+.card-group {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.card {
+  margin-right: 10px;
+}
+
+.card-group h5
+{
+  font-weight: bold;
+  font-size:30px;
+
+}
+
+
+footer {
+  background-color: #84d1e4; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto do footer */
+  text-align: center;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
+}   
+
+
+
+
+
+
+/* Formulario de Adocao */
+
+.obrigatorio::after {
+    content: " *";
+    color: red;
+}
+
+#alerta-validacao-dados {
+    display: none;
+} 
+
+.botao-de-submissao {
+  border: 3px solid #84d1e4;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+.botao-de-submissao:hover {
+  background: #84d1e4;
+  border: 3px solid #84d1e4;
+  color: white;
+  font-size: 1.25em;
+}
+
+
+
+/*Loja*/
+
+.quantidade
+{
+    width: 110px;
+}
+
+.adicionar-carrinho  {
+    border: 3px solid #84d1e4;
+    color: #84d1e4;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1em;
+    font-weight: 550;
+}
+
+.adicionar-carrinho:hover {
+    background: #84d1e4;
+    border: 3px solid #84d1e4;
+    color: white;
+    font-size: 1.05em;
+  }
+
+  .titulo-principal {
+    font-size:50px;
+    font-weight: 700;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+  }
+
+.card {
+  max-height: 100rem;
+}
+
+.bd-placeholder-img {
+  max-height: 25rem;
+  object-fit: cover;
+}
+
+
+/*----Sobre------*/
+input[type="submit"] {
+  background-color: #84d1e4; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8cb7c4; 
+}
+
+.imagem-direita {
+  float: right;
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  margin-top: 10px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.footer-contactos {
+  background-color: #84d1e4; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto do footer */
+  text-align: center;
+  padding: 50px;
+  bottom: 0;
+  width: 100%;
+}   
+
+.card-group h5
+{
+  color: #84d1e4;
+  font-weight: bold;
+  font-size:30px;
+
+}
+
+
+
+/*----------/
