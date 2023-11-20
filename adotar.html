@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\adoptabuddy_logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img\adoptabuddy_logo.ico" type="image/x-icon">
+    <title>Formulário de Adoção | Adopt a buddy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;800&display=swap" rel="stylesheet">    
+</head>
+<body>
+    
+
+     <!-- Barra de navegação -->
+     <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-personalizar">
+         <a class="navbar-logo" href="#">
+           <img src="/img/logo-png.png" alt="Logo da Marca">
+       </a>
+         <div class="mx-auto">
+             <!-- Logotipo -->
+       
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             
+             <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Página Inicial</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="loja.html">Loja</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Cães para Adoção</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="adotar.html">Adotar</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="contactos.html">Contatos</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+       </div>
+       </nav>
+
+       <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="titulo-principal">Formulário de Adoção</h1>
+            <p class="lead text-body-secondary">Agradecemos muito por considerar a adoção de um dos nossos animais. Pedimos que preencha este formulário fornecendo 
+                o máximo de informações possível, para que o ajudemos a encontrar o cão perfeito para si!</p>
+          </div>
+        </div>
+      </section>
+
+    <div class="container mt-4">
+
+            <form action="pedidos_de_adocao.php" method="post" id="formulario_adocao" class="needs-validation" novalidate>
+                <!-- Campos do Formulário -->
+                <div class="mb-4">
+                    <label for="nomeCompleto" class="form-label obrigatorio">Nome Completo</label>
+                    <input type="text" class="form-control" id="nomeCompleto" required>
+                    <div class="invalid-feedback">Por favor introduz um nome válido.</div>
+                </div> 
+
+                <div class="mb-4">
+                    <label for="contactoTelefonico" class="form-label obrigatorio">Contacto Telefónico</label>
+                    <input type="tel" class="form-control" id="contactoTelefonico"  maxlength="9"  required>
+                    <div class="invalid-feedback">Por favor introduza um contacto válido.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="horarioContato" class="form-label obrigatorio">Horário preferencial de contacto</label>
+                    <input type="text" class="form-control" id="horarioContato"   required>
+                    <div class="invalid-feedback">Por favor, introduza um horário de contacto válido.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="form-label obrigatorio">E-mail</label>
+                    <input type="email" class="form-control" id="email"   required>
+                    <div class="invalid-feedback">Por favor, introduza um endereço válido.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="idade" class="form-label obrigatorio">Idade</label>
+                    <input type="text" class="form-control" id="idade"  required >
+                    <div class="invalid-feedback">Por favor, introduza uma idade válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="morada" class="form-label obrigatorio">Morada</label>
+                    <textarea class="form-control" id="morada" rows="3"  required ></textarea>
+                    <div class="invalid-feedback">Por favor, introduza uma morada válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="cidade" class="form-label obrigatorio">Cidade</label>
+                    <input type="text" class="form-control" id="cidade"  required >
+                    <div class="invalid-feedback">Por favor, introduza uma cidade válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="profissao" class="form-label obrigatorio">Profissão</label>
+                    <input type="text" class="form-control" id="profissao"  required >
+                </div>
+
+                <div class="mb-4">
+                    <label for="preferenciaSexo" class="form-label obrigatorio">Indique se tem preferência pelo sexo do animal</label>
+                    <select class="form-control" id="preferenciaSexo"   required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="femea">Fêmea</option>
+                        <option value="macho">Macho</option>
+                        <option value="indiferente">Indiferente</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, introduza um género válido.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="objetivoAdocao" class="form-label obrigatorio">Qual o objetivo da adoção?</label>
+                    <select class="form-control" id="objetivoAdocao"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="companhiaOutroGato">Companhia para outro gato</option>
+                        <option value="companhia">Companhia</option>
+                        <option value="criacao">Criação</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione um objetivo válido.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="tipoHabitacao" class="form-label obrigatorio">Tipo de habitação</label>
+                    <select class="form-control" id="tipoHabitacao"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casaComQuintal">Casa com quintal/acesso ao exterior</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione um tipo de habitação válido.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="jardimVedado" class="form-label">Se tem jardim, este está completamente vedado?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoJardim" id="simJardim">
+                        <label class="form-check-label" for="simJardim">
+                         Sim
+                        </label>
+                    </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoJardim" id="naoJardim">
+                        <label class="form-check-label" for="naoJardim">
+                        Não
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="habitacaoPropria" class="form-label obrigatorio">A habitação é</label>
+                    <select class="form-control" id="habitacaoPropria"   required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="propria">Própria</option>
+                        <option value="arrendada">Arrendada</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="quantidadeAdultos" class="form-label obrigatorio">Quantos adultos vivem na casa?</label>
+                    <input type="number" class="form-control" id="quantidadeAdultos"  required >
+                    <div class="invalid-feedback">Por favor, introduza um número válido.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="vivemCriancas" class="form-label">Vivem crianças na casa? Se sim, indique o intervalo de idades.</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input verificaCheckbox" id="semCriancas" name="intervaloIdades" value="naoExistem"  >
+                        <label class="form-check-label" for="semCriancas">Não existem crianças</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input verificaCheckbox" id="menos5anos" name="intervaloIdades" value="menos5"  >
+                        <label class="form-check-label" for="menos5anos">Menos de 5 anos</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input verificaCheckbox" id="5a10anos" name="intervaloIdades" value="5a10"  >
+                        <label class="form-check-label" for="5a10anos">5 a 10 anos</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input verificaCheckbox" id="mais10anos" name="intervaloIdades" value="mais10"  >
+                        <label class="form-check-label" for="mais10anos">Mais de 10 anos</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione pelo menos uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="visitadaFrequentemente" class="form-label obrigatorio">A casa é visitada frequentemente por crianças?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoFreq" id="simFreq"  required >
+                        <label class="form-check-label" for="simFreq">
+                         Sim
+                        </label>
+                    </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoFreq" id="naoFreq">
+                        <label class="form-check-label" for="naoFreq">
+                        Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="horasSozinho" class="form-label obrigatorio">Quantas horas por dia, em média, passará o cão, sozinho em casa?</label>
+                    <input type="text" class="form-control" id="horasSozinho"  required >
+                    <div class="invalid-feedback">Por favor, introduza um valor válido.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="outrosAnimais" class="form-label obrigatorio">Tem outros animais em casa e/ou a seu cargo? Se sim, especifique por favor o tipo e a idade.</label>
+                    <textarea class="form-control" id="outrosAnimais" rows="3"  required ></textarea>
+                    <div class="invalid-feedback">Por favor, especifique os outros animais.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <p>Que tipo de personalidade espera encontrar no cão? Preencha por favor as próximas questões:</p>
+                </div>
+
+                <!-- Perguntas de Personalidade do cão -->
+                <div class="mb-4">
+                    <label for="gostaCriancas" class="form-label obrigatorio">Goste de crianças:</label>
+                    <select class="form-control" id="gostaCriancas"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="sociavelComOutros" class="form-label obrigatorio">Sociável com outros animais:</label>
+                    <select class="form-control" id="gostaCriancas"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="sociavelComOutros" class="form-label obrigatorio">Sociável com outros animais:</label>
+                    <select class="form-control" id="sociavelComOutros"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="importanciaEstranhos" class="form-label obrigatorio">Não se importe com estranhos:</label>
+                    <select class="form-control" id="importanciaEstranhos"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="esterilizacao" class="form-label obrigatorio">Esteja esterilizado/castrado:</label>
+                    <select class="form-control" id="esterilizacao"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="pegadoAoColo" class="form-label obrigatorio">Goste de ser pegado ao colo:</label>
+                    <select class="form-control" id="pegadoAoColo"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="calmo" class="form-label obrigatorio">Que seja calmo:</label>
+                    <select class="form-control" id="calmo"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="comportamento" class="form-label obrigatorio">Que se comporte bem quando fica sozinho:</label>
+                    <select class="form-control" id="comportamento"  required >
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="muitoImportante">Muito importante</option>
+                        <option value="importante">Importante</option>
+                        <option value="poucoImportante">Pouco importante</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="atividadeCao" class="form-label">Atividade do cão:</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="calmo" name="atividade" value="calmo">
+                        <label class="form-check-label" for="calmo">Calmo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="moderadamenteAtivo" name="atividade" value="moderadamenteAtivo">
+                        <label class="form-check-label" for="moderadamenteAtivo">Moderadamente ativo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="ativo" name="atividade" value="ativo">
+                        <label class="form-check-label" for="ativo">Ativo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="indiferente" name="atividade" value="indiferente">
+                        <label class="form-check-label" for="indiferente">Indiferente</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione pelo menos uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="primeiroCao" class="form-label obrigatorio">Será o seu primeiro cao?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoPrimCao" id="sim"  required >
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         Sim
+                        </label>
+                    </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="simNaoPrimCao" id="nao">
+                        <label class="form-check-label" for="nao">
+                        Não
+                        </label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="experienciaAnimais" class="form-label">Se não, conte-nos a sua experiência por favor.</label>
+                    <textarea class="form-control" id="experienciaAnimais" rows="3"></textarea>
+                    
+                </div>
+                
+                <div class="mb-4">
+                    <label for="cuidadosAusencia" class="form-label obrigatorio">Na sua ausência (férias p.ex.) como pretende deixar o animal?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cuidadosAusencia" id="cuidadosAusenciaFamiliar" value="familiarConhecido"  required >
+                        <label class="form-check-label" for="cuidadosAusenciaFamiliar">Ficará aos cuidados de um familiar/conhecido</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cuidadosAusencia" id="cuidadosAusenciaHotel" value="hotel"  required >
+                        <label class="form-check-label" for="cuidadosAusenciaHotel">Ficará em hotel</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cuidadosAusencia" id="cuidadosAusenciaFerias" value="ferias"   required>
+                        <label class="form-check-label" for="cuidadosAusenciaFerias">Irá comigo de férias</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="animalPreso" class="form-label obrigatorio">O animal ficará preso em alguma situação?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="animalPreso" id="animalPresoSim" value="sim"  required >
+                        <label class="form-check-label" for="animalPresoSim">Sim</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="animalPreso" id="animalPresoNao" value="nao"  required >
+                        <label class="form-check-label" for="animalPresoNao">Não</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="veterinarioPreferido" class="form-label">Tem algum veterinário preferido? Se sim, deixe o seu nome e contacto.</label>
+                    <input type="text" class="form-control" id="veterinarioPreferido">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="recorrerVeterinario" class="form-label obrigatorio">No caso de acidente, irá recorrer a um veterinário?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="recorrerVeterinario" id="recorrerVeterinarioSim" value="sim"  required >
+                        <label class="form-check-label" for="recorrerVeterinarioSim">Sim</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="recorrerVeterinario" id="recorrerVeterinarioNao" value="nao"  required >
+                        <label class="form-check-label" for="recorrerVeterinarioNao">Não</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="contaElevada" class="form-label obrigatorio">Se a conta for elevada, o que fará?</label>
+                    <input type="text" class="form-control" id="contaElevada"  required >
+                    <div class="invalid-feedback">Por favor, digite o que fará.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="alimentacaoAnimal" class="form-label obrigatorio">Que tipo de alimentação pretende dar ao animal?</label>
+                    <select class="form-control" id="alimentacaoAnimal"   required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="racaoSeca">Ração Seca</option>
+                        <option value="racaoHumida">Ração Húmida</option>
+                        <option value="comidaCaseira">Comida Caseira</option>
+                        <option value="restosRefeicoes">Restos de Refeições</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="apoioAposAdocao" class="form-label obrigatorio">Gostaria de continuar a ter o nosso apoio/conselhos, depois de adotar o animal?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apoioAposAdocao" id="apoioAposAdocaoSim" value="sim"  required >
+                        <label class="form-check-label" for="apoioAposAdocaoSim">Sim</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apoioAposAdocao" id="apoioAposAdocaoNao" value="nao"  required >
+                        <label class="form-check-label" for="apoioAposAdocaoNao">Não</label>
+                        <div class="invalid-feedback">Por favor, selecione uma opção válida.</div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="outraInformacao" class="form-label">Outra informação que queira partilhar connosco</label>
+                    <textarea class="form-control" id="outraInformacao" rows="3"></textarea>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="anexarDocumentos" class="form-label">Anexar documentos:</label>
+                    <input type="file" class="form-control" id="anexarDocumentos">
+                </div>
+                
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="manterDadosSeguranca"  required >
+                    <label class="form-check-label obrigatorio" for="manterDadosSeguranca">Vamos manter os seus dados em segurança, enquanto assim o pretender, pode eliminar ou editar. Consulte a nossa Política de Privacidade.</label>
+                    <div class="invalid-feedback">É necessário concordar para prosseguir.</div>
+                </div>
+                
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="concordarPoliticaPrivacidade"  required >
+                    <label class="form-check-label obrigatorio" for="concordarPoliticaPrivacidade">Li e concordo com a Política de Privacidade.</label>
+                    <div class="invalid-feedback">É necessário concordar para prosseguir.</div>
+                </div>
+
+                <div class="mb-5">
+                    <div id="alerta-validacao-dados" class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out! </div>
+                    </div>
+
+                <!-- Botão de Sumbissão do Formulário de Adoção -->
+                <div class="mb-5">
+                    <button id="botao_formulario_adocao" type="submit" class="btn botao-de-submissao">Submeter</button>
+                </div>
+                
+            </form>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+<footer>
+    <img class="mb-3" id="img-footer" src="img/logo-white.png" alt="Adopt a Buddy logo">
+    <p>&copy; 2023 Adopt A Buddy. </p>
+  </footer>
+</html>
