@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img\adoptabuddy_logo.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="img\adoptabuddy_logo.ico"
+      type="image/x-icon"
+    />
+    <title>Adopt a Buddy | Portal de Adoção de Cães</title>
+  </head>
+
+
+  <body>
+      <!-- Barra de navegação -->
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-personalizar">
+          <a class="navbar-logo" href="index.html">
+          <img src="/img/logo-png.png" alt="Logo da Marca">
+          </a>
+          <div class="mx-auto">
+              <!-- Logotipo -->
+        
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="caes_para_adocao.html"
+                          >Cães para Adoção</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html">Favoritos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="loja.html">Loja</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adotar.html">Adotar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
+      </div>
+
+    <div class="mt-5 mb-5 py-5 container detalhes-cao">
+      <div class="card card-detalhes">
+        <section class="py-5 px-5 container">
+          <h1 class="titulo-principal nome-cao-detalhes">Detalhes de </h1>
+
+        </section>
+        <img
+          src="https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600"
+          class="card-img-top img-fluid imagem-detalhes-cao"
+          alt="Imagem do Cão"
+        />
+        <div class="card-body">
+          <h5 class="mb-3 card-title">Descrição</h5>
+
+          <p class="mb-3 card-text descricao-detalhes-cao">
+            Spot é um incrível cão jovem, macho, de porte médio. Ele é muito
+            fofo, inteligente, brincalhão, feliz e afetuoso.
+          </p>
+
+          <table class="table">
+            <table class="table">
+              <tbody>
+                  <tr>
+                      <th scope="row">Nome</th>
+                      <td class="nome-cao-detalhes"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Raça Mista</th>
+                      <td class="raca-mista"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nome da(s) Raça(s)</th>
+                    <td class="nome-raca"></td>
+                </tr>
+                  <tr>
+                      <th scope="row">Idade</th>
+                      <td class="idade-cao"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Gênero</th>
+                      <td class="genero-cao"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Tamanho</th>
+                      <td class="tamanho-cao"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Cor do pelo</th>
+                      <td class="cor-cao"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Status</th>
+                      <td class="status-cao"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Contato</th>
+                      <td>
+                          <ul class="list-unstyled lista-contatos">
+                          </ul>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          
+          <div class="mt-5 mb-5 botoes">
+            
+            <div class="mr-5 botao-adotar">
+            </div>
+              <label class="botao-favoritos">
+                <input type="checkbox" />
+                <svg
+                  id="Layer_1"
+                  version="1.0"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"
+                  ></path>
+                </svg>
+              </label>
+            <div style=" margin-left: 35%;" class="botao-voltar">            
+              <a
+              style="width: 15em;"
+              href="caes_para_adocao.html"
+              class="botao-simples"
+              >Voltar para a Lista de Cães</a
+            >
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5">
+      <div class="footer-contactos">
+        <img
+          class="mb-3"
+          id="img-footer"
+          src="img/logo-white.png"
+          alt="Adopt a Buddy logo"
+        />
+        <p>&copy; 2023 Adopt A Buddy.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/favoritos.js" type="text/javascript"></script>
+</html>
